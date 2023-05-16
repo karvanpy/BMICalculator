@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung BMI - Kalkulator Index Massa Tubuh Online</title>
+    <meta name="description" content="Hitung BMI Anda secara online menggunakan kalkulator Index Massa Tubuh kami. Cari tahu apakah Anda dalam kategori berat badan yang sehat atau perlu mengambil langkah-langkah kesehatan lebih lanjut.">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="card card--header">
+            <h1 class="title">BODYCALC</h1>
+            <span class="subtitle">Kalkulator Indeks Massa Tubuh (IMT)</span>
+        </div>
+        <div class="card">
+            <div class="card--body">
+                <div class="form-group">
+                    <label for="height">Tinggi Badan</label>
+                    <input type="number" id="bodyHeight" name="height" placeholder="" required>
+                </div>
+                <div class="form-group">
+                    <label for="weight">Berat Badan</label>
+                    <input type="number" id="bodyWeight" name="weight" placeholder="" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="btn--calculate">Hitung</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card--header">
+                <span>Hasil</span>
+            </div>
+            <div class="card--body">
+                <p>Index Massa Tubuh: <span id="result--bmi"></span></p>
+                <p>Status: <span id="result--status"></span></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span>Made with ❤️ by karvanpy</span>
+    </footer>
+    <script defer src="index.js"></script>
+</body>
+</html>
